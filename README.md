@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## About this project
+
+v2 of casscon plumbing and gas, a look back at what I once developed made me cringe, this is taking that old site and just cleaning it up.
+
 ## Getting Started
 
 First, run the development server:
