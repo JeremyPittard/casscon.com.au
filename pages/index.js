@@ -19,9 +19,9 @@ export default function Home(results) {
       {/* <Testimonials /> */}
       <About {...results.about}/>
       <Contact {...results.cassconSettings}/>
-      <Cards {...results.services} />
-      <Cards {...results.services} />
-      <Cards {...results.services} />
+      <Cards {...results.services} cardType={'plumbing'} />
+      <Cards {...results.services} cardType={'gas'} />
+      <Cards {...results.services} cardType={'other'} />
       <Footer {...results.cassconSettings} />
     </div>
   )
