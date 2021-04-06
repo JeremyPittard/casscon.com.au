@@ -5,10 +5,9 @@ import { gql } from "@apollo/client";
 import { stripIgnoredCharacters } from "graphql";
 
 const About = (props) => {
-  console.log(props, "about props");
   return (
     <>
-      <section>
+      <section id='about'>
         <div dangerouslySetInnerHTML={{ __html: props.aboutContent }}></div>
       </section>
     </>

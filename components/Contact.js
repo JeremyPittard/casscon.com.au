@@ -1,7 +1,8 @@
 const Contact = props => {
-    console.log(props, 'settings props')
     return(
-        <h1>Contact</h1>
+        <section id='contact'>
+            <h1>Contact</h1>
+        </section>
     )
 }
 

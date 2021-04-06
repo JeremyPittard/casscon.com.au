@@ -1,5 +1,4 @@
 const Hero = (props) => {
-  console.log(props, "bullet-props");
 
   return (
     <>

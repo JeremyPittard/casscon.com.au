@@ -1,9 +1,9 @@
 import Head from "next/head";
 
-const SiteHead = () => {
+const SiteHead = props => {
   return (
     <Head>
-      <title>Casscon Plumbing &amp; Gas || Expert Service at an Affordable Price</title>
+      <title>{props.pageTitle}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );

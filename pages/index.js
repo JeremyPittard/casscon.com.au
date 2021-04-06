@@ -12,11 +12,11 @@ import { Testimonials } from '../components/testimonials';
 export default function Home(results) {
   return (
     <div>
-      <SiteHead />
+      <SiteHead {...results.cassconSettings}/>
       <Nav />
-      <h1>casscon</h1>
+      <h1 style={{height: '100vh'}}>casscon</h1>
       <Hero {...results.bulletpoints} />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <About {...results.about}/>
       <Contact {...results.cassconSettings}/>
       <Cards {...results.services} cardType={'plumbing'} />
