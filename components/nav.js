@@ -1,13 +1,14 @@
 import helpers from "../utils/helpers";
 
-const Nav = () => {
+const Nav = props => {
+  console.log(props)
   return (
-    <nav className="container mx-auto">
-      <ul className="flex items-center text-2xl font-headings">
-        <li>
+    <nav className="container mx-auto flex justify-between">
+        <div>
           <img src="/img/casscon-logo.png" alt="casscon plumbing and gas" />
-        </li>
-        <li>
+        </div>
+      <ul className="md:flex items-center text-xl font-headings hidden">
+        <li className="mx-4">
           <a
             href="#about"
             onClick={(e, destination) => helpers.smoothScroll(e, "#about")}
@@ -23,7 +24,7 @@ const Nav = () => {
             Contact
           </a>
         </li>
-        <li>
+        <li className="mx-4">
           <a
             href="#reviews"
             onClick={(e, destination) => helpers.smoothScroll(e, "#reviews")}
@@ -31,7 +32,7 @@ const Nav = () => {
             Reviews
           </a>
         </li>
-        <li>
+        <li className="mx-4">
           <a
             href="#plumbing-services"
             onClick={(e, destination) =>
@@ -41,7 +42,7 @@ const Nav = () => {
             Plumbing
           </a>
         </li>
-        <li>
+        <li className="mx-4">
           <a
             href="#gas-services"
             onClick={(e, destination) =>
@@ -51,7 +52,7 @@ const Nav = () => {
             Gas
           </a>
         </li>
-        <li>
+        <li className="mx-4">
           <a
             href="#other-services"
             onClick={(e, destination) =>
@@ -61,6 +62,7 @@ const Nav = () => {
             Other Services
           </a>
         </li>
+        <li class="mr-4"><a href={`tel:${props.contactNumber}`} class="dark bg-casscon-blue text-casscon-white py-2 px-4 rounded-md">Call Now!</a></li>
       </ul>
     </nav>
   );

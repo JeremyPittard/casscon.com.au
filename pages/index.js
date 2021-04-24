@@ -8,12 +8,17 @@ import { gql } from "@apollo/client";
 import Footer from '../components/footer';
 import Contact from '../components/Contact';
 import { Testimonials } from '../components/testimonials';
+import mailgo from 'mailgo';
+
+mailgo({
+  showFooter: false,
+});
 
 export default function Home(results) {
   return (
     <div>
       <SiteHead {...results.cassconSettings}/>
-      <Nav />
+      <Nav {...results.cassconSettings} />
       <h1 style={{height: '100vh'}}>casscon</h1>
       <Hero {...results.bulletpoints} />
       <Testimonials />
